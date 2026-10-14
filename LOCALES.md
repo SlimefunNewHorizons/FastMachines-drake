@@ -1,0 +1,27 @@
+# Locales
+
+This addon is available in the following languages:
+
+- English (US) `en-US`
+- Magyar `hu`
+- 日本語 `ja`
+- Tiếng Việt `vi`
+- 简体中文 `zh-Hans`
+- 繁體中文 `zh-Hant`
+
+## SlimefunTranslation
+
+This plugin supports [SlimefunTranslation](https://github.com/ybw0014/SlimefunTranslation) for per-player localization.
+
+## Contribution
+
+If you want to contribute your translation, please visit our [Crowdin](https://crowdin.com/project/fastmachines) page, and submit your translation.
+
+If your language is not there, please contact @ybw0014 in Slimefun Addon Community's Discord server.
+
+<!-- DRAKES-STATUS:BEGIN -->
+> Estado de sincronizacion: **2026-04-24**.
+> Baseline tecnico vigente: **Paper 1.21.1 + Java 21**.
+> CI principal en `main`: **Gates 1-5 en verde**.
+> Nota: el monorepo completo sigue en migracion incremental por lotes.
+<!-- DRAKES-STATUS:END -->
