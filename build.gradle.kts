@@ -14,6 +14,7 @@ repositories {
     maven("https://repo.papermc.io/repository/maven-public/")
     maven("https://repo.alessiodp.com/releases/")
     maven("https://jitpack.io")
+    maven("https://maven.drakescraft.cl/")
 }
 
 dependencies {
@@ -27,12 +28,8 @@ dependencies {
     compileOnlyAndTestImpl("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
     compileOnlyAndTestImpl("com.github.drakescraft_labs:slimefun-core:11.0-Drake-1.21.1-SNAPSHOT")
     compileOnlyAndTestImpl("com.github.drakescraft_labs:dough-core:1.3.1-DRAKE-v11-SNAPSHOT")
-    // API en paquete com.github.drakescraft_labs (fork Drake); el JAR de Guizhan/JitPack usa net.guizhanss.
-    compileOnly(
-        files(
-            layout.projectDirectory.file("../SlimefunTranslation/build/libs/SlimefunTranslation-11.0-Drake-1.21.1-SNAPSHOT.jar")
-        )
-    )
+    // API en paquete com.github.drakescraft_labs (fork Drake); publicada en maven.drakescraft.cl
+    compileOnly("com.github.drakescraft_labs:slimefuntranslation:11.0-Drake-1.21.1-SNAPSHOT")
     compileOnly("com.github.schntgaispock:SlimeHUD:1.3.0")
     compileOnly("com.github.drakescraft_labs:InfinityExpansion-drake:1.20.6-Drake-SNAPSHOT")
     compileOnly("com.github.VoperAD:SlimeFrame:8af2379a01")
@@ -69,16 +66,6 @@ kotlin {
         javaParameters = true
         jvmTarget = JvmTarget.JVM_21
     }
-}
-
-val slimefunTranslationShadowJar = project(":sources:community-addons:SlimefunTranslation").tasks.named("shadowJar")
-
-tasks.named("compileKotlin") {
-    dependsOn(slimefunTranslationShadowJar)
-}
-
-tasks.named("compileJava") {
-    dependsOn(slimefunTranslationShadowJar)
 }
 
 // Shadow necesita el JAR de Kotlin como entrada; el clasificador "thin" evita confundirlo con el fat JAR del servidor.
