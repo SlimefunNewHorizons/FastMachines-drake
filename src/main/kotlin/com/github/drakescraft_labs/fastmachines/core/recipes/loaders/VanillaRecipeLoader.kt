@@ -26,7 +26,12 @@ class VanillaRecipeLoader<T : Recipe>(
     override fun beforeLoad() {
         val iterator = Bukkit.getServer().recipeIterator()
         while (iterator.hasNext()) {
-            val recipe = iterator.next()
+            // a single broken vanilla recipe (e.g. an item the server cannot rebuild) must not abort the whole load
+            val recipe = try {
+                iterator.next()
+            } catch (e: RuntimeException) {
+                continue
+            }
             if (recipeClass.isInstance(recipe)) {
                 registerRecipe(recipe as T)
             }
