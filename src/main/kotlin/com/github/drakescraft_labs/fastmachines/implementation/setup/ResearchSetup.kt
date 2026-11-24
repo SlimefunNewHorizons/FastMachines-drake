@@ -1,7 +1,7 @@
 package net.guizhanss.fastmachines.implementation.setup
 
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack
-import com.github.drakescraft_labs.slimefun4.api.researches.Research
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack
+import io.github.thebusybiscuit.slimefun4.api.researches.Research
 import net.guizhanss.fastmachines.implementation.items.FMItems
 import net.guizhanss.fastmachines.utils.constants.Keys
 

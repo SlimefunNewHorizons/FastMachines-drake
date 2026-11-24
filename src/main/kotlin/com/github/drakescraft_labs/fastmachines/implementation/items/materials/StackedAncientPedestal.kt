@@ -1,14 +1,14 @@
 package net.guizhanss.fastmachines.implementation.items.materials
 
-import com.github.drakescraft_labs.slimefun4.api.events.PlayerRightClickEvent
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType
-import com.github.drakescraft_labs.slimefun4.core.handlers.ItemUseHandler
-import com.github.drakescraft_labs.slimefun4.core.services.sounds.SoundEffect
-import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems
-import com.github.drakescraft_labs.slimefun4.implementation.items.blocks.UnplaceableBlock
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.ItemUtils
+import io.github.thebusybiscuit.slimefun4.api.events.PlayerRightClickEvent
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType
+import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler
+import io.github.thebusybiscuit.slimefun4.core.services.sounds.SoundEffect
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems
+import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.UnplaceableBlock
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils
 import net.guizhanss.guizhanlib.minecraft.utils.InventoryUtil
 import org.bukkit.inventory.ItemStack
 import javax.annotation.Nonnull

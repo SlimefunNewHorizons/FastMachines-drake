@@ -1,6 +1,6 @@
 package net.guizhanss.fastmachines.core.items.groups
 
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup
 import org.bukkit.NamespacedKey
 import org.bukkit.entity.Player
 import org.bukkit.inventory.ItemStack

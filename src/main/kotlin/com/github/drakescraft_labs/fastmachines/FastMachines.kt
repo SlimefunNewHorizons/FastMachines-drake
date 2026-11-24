@@ -1,7 +1,7 @@
 package net.guizhanss.fastmachines
 
-import com.github.drakescraft_labs.slimefun4.libraries.dough.updater.BlobBuildUpdater
-import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon
+import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.BlobBuildUpdater
+import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon
 import net.byteflux.libby.Library
 import net.guizhanss.fastmachines.core.FMRegistry
 import net.guizhanss.fastmachines.core.services.ConfigService

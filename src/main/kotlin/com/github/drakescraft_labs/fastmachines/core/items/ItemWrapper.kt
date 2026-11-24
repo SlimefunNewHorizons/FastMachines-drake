@@ -1,6 +1,6 @@
 package net.guizhanss.fastmachines.core.items
 
-import com.github.drakescraft_labs.slimefun4.utils.itemstack.ItemStackWrapper
+import io.github.thebusybiscuit.slimefun4.utils.itemstack.ItemStackWrapper
 import net.guizhanss.fastmachines.utils.items.isSimilarTo
 import net.guizhanss.guizhanlib.kt.slimefun.extensions.getSlimefunItem
 import net.guizhanss.guizhanlib.kt.slimefun.extensions.isSlimefunItem

@@ -2,7 +2,7 @@
 
 package net.guizhanss.fastmachines.utils.items
 
-import com.github.drakescraft_labs.slimefun4.implementation.Slimefun
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun
 import net.guizhanss.fastmachines.FastMachines
 import net.guizhanss.fastmachines.core.items.ItemWrapper
 import net.guizhanss.guizhanlib.minecraft.utils.MinecraftVersionUtil

@@ -2,9 +2,9 @@
 
 package net.guizhanss.fastmachines.implementation.items
 
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType
-import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems
-import com.github.drakescraft_labs.slimefun4.implementation.items.blocks.UnplaceableBlock
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems
+import io.github.thebusybiscuit.slimefun4.implementation.items.blocks.UnplaceableBlock
 import net.guizhanss.fastmachines.FastMachines
 import net.guizhanss.fastmachines.implementation.groups.FMItemGroups
 import net.guizhanss.fastmachines.implementation.items.machines.infinityexpansion.FastInfinityWorkbench

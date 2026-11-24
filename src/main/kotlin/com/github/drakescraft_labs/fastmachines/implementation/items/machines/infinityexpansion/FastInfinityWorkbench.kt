@@ -1,9 +1,9 @@
 package net.guizhanss.fastmachines.implementation.items.machines.infinityexpansion
 
 import com.github.drakescraft_labs.infinityexpansion.items.blocks.InfinityWorkbench
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType
 import net.guizhanss.fastmachines.FastMachines
 import net.guizhanss.fastmachines.core.recipes.loaders.InfinityExpansionRecipeLoader
 import net.guizhanss.fastmachines.core.recipes.loaders.RecipeLoader

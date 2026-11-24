@@ -1,6 +1,6 @@
 package net.guizhanss.fastmachines.utils.items
 
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem
 import net.guizhanss.guizhanlib.kt.slimefun.extensions.getSlimefunItem
 import net.guizhanss.guizhanlib.kt.slimefun.extensions.isSlimefunItem
 import org.bukkit.World

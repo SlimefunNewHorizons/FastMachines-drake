@@ -1,6 +1,6 @@
 package net.guizhanss.guizhanlib.kt.slimefun.items.builder
 
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack
 import org.bukkit.Material
 import org.bukkit.inventory.ItemStack
 import org.bukkit.plugin.java.JavaPlugin

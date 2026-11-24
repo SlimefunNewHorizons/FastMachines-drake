@@ -1,9 +1,9 @@
 package net.guizhanss.fastmachines.utils.items.builder
 
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType
 import net.guizhanss.fastmachines.FastMachines
 import net.guizhanss.guizhanlib.kt.common.utils.RequiredProperty
 import net.guizhanss.guizhanlib.kt.common.utils.getConstructor

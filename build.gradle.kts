@@ -1,13 +1,14 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    kotlin("jvm") version "2.1.10"
-    id("com.gradleup.shadow") version "8.3.10"
-    id("net.minecrell.plugin-yml.bukkit") version "0.6.0"
-    id("xyz.jpenilla.run-paper") version "2.3.1"
+    kotlin("jvm") version "2.3.0"
+    id("com.gradleup.shadow") version "9.4.1"
+    id("de.eldoria.plugin-yml.bukkit") version "0.8.0"
+    id("xyz.jpenilla.run-paper") version "3.0.2"
 }
 
 repositories {
+    maven("https://pack.drakescraft.cl/builds/maven/")
     mavenLocal()
     mavenCentral()
     maven("https://central.sonatype.com/repository/maven-snapshots/")
@@ -25,13 +26,11 @@ dependencies {
 
     compileOnly(kotlin("stdlib")) // loaded through library loader
     compileOnly(kotlin("reflect")) // loaded through library loader
-    compileOnlyAndTestImpl("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
-    compileOnlyAndTestImpl("com.github.drakescraft_labs:slimefun-core:11.0-Drake-1.21.1-SNAPSHOT")
-    compileOnlyAndTestImpl("com.github.drakescraft_labs:dough-core:1.3.1-DRAKE-v11-SNAPSHOT")
-    // API en paquete com.github.drakescraft_labs (fork Drake); publicada en maven.drakescraft.cl
-    compileOnly("com.github.drakescraft_labs:slimefuntranslation:11.0-Drake-1.21.1-SNAPSHOT")
+    compileOnlyAndTestImpl("io.papermc.paper:paper-api:26.2.build.129-stable")
+    compileOnlyAndTestImpl("com.github.drakescraft_labs:slimefun-core:11.0-Universal-26.x-SNAPSHOT")
+    compileOnly("com.github.drakescraft_labs:SlimefunTranslation:11.0-Universal-26.x-SNAPSHOT")
     compileOnly("com.github.schntgaispock:SlimeHUD:1.3.0")
-    compileOnly("com.github.drakescraft_labs:InfinityExpansion-drake:1.20.6-Drake-SNAPSHOT")
+    compileOnly("com.github.drakescraft_labs:InfinityExpansion-drake:1.20.6-UNIVERSAL-26x-SNAPSHOT")
     compileOnly("com.github.VoperAD:SlimeFrame:8af2379a01")
     compileOnly("net.guizhanss:InfinityExpansion2:8d3e6c40f6")
     // GuizhanLib trae bstats antiguo (p. ej. ctor JavaPlugin); sombrea la 3.1.0 y provoca NoSuchMethodError en runtime.
@@ -50,21 +49,21 @@ dependencies {
 group = "com.github.drakescraft_labs"
 description = "FastMachines"
 
-version = "11.0-Drake-1.21.1-SNAPSHOT"
+version = "11.0-Universal-26.x-SNAPSHOT"
 
 /** Paquete real del fork Drake (upstream Guizhan); coincide con las fuentes Kotlin. */
 val mainPackage = "net.guizhanss.fastmachines"
 
 java {
     disableAutoTargetJvm()
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
 }
 
 kotlin {
     compilerOptions {
         javaParameters = true
-        jvmTarget = JvmTarget.JVM_21
+        jvmTarget = JvmTarget.JVM_25
     }
 }
 
@@ -84,10 +83,9 @@ tasks.shadowJar {
     doRelocate("net.guizhanss.guizhanlib")
     doRelocate("org.bstats")
     doRelocate("io.papermc.lib", "com.github.drakescraft_labs.fastmachines.libs.paperlib")
-    relocate("io.github.thebusybiscuit.slimefun4", "com.github.drakescraft_labs.slimefun4")
     // minimize() podía quitar la clase principal FastMachines del JAR sombreado
     archiveClassifier.set("")
-    archiveFileName.set("FastMachines-11.0-Drake-1.21.1-SNAPSHOT.jar")
+    archiveFileName.set("FastMachines-11.0-Universal-26.x-SNAPSHOT.jar")
 }
 
 bukkit {

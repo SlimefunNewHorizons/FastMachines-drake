@@ -1,7 +1,7 @@
 package net.guizhanss.fastmachines.implementation.groups
 
-import com.github.drakescraft_labs.slimefun4.api.items.groups.NestedItemGroup
-import com.github.drakescraft_labs.slimefun4.api.items.groups.SubItemGroup
+import io.github.thebusybiscuit.slimefun4.api.items.groups.NestedItemGroup
+import io.github.thebusybiscuit.slimefun4.api.items.groups.SubItemGroup
 import net.guizhanss.fastmachines.FastMachines
 import net.guizhanss.fastmachines.core.items.groups.HiddenItemGroup
 import net.guizhanss.fastmachines.utils.constants.HeadTexture

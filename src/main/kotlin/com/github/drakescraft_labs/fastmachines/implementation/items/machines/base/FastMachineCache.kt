@@ -1,10 +1,10 @@
 package net.guizhanss.fastmachines.implementation.items.machines.base
 
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem
-import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile
-import com.github.drakescraft_labs.slimefun4.utils.ChestMenuUtils
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenu
-import com.github.drakescraft_labs.slimefun4.libraries.dough.blocks.BlockPosition
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem
+import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile
+import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu
+import io.github.thebusybiscuit.slimefun4.libraries.dough.blocks.BlockPosition
 import net.guizhanss.fastmachines.FastMachines
 import net.guizhanss.fastmachines.core.recipes.Recipe
 import net.guizhanss.fastmachines.utils.consumeChoice

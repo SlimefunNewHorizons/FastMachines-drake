@@ -1,6 +1,6 @@
 package net.guizhanss.fastmachines.implementation.listeners
 
-import com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage
+import me.mrCookieSlime.Slimefun.api.BlockStorage
 import net.guizhanss.fastmachines.FastMachines
 import net.guizhanss.fastmachines.core.items.attributes.NotAHopper
 import org.bukkit.event.EventHandler

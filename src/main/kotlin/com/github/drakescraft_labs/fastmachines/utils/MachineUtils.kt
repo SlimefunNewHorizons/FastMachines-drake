@@ -1,6 +1,6 @@
 package net.guizhanss.fastmachines.utils
 
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenu
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu
 import net.guizhanss.fastmachines.FastMachines
 import net.guizhanss.fastmachines.core.items.ItemWrapper
 import net.guizhanss.fastmachines.core.recipes.choices.RecipeChoice

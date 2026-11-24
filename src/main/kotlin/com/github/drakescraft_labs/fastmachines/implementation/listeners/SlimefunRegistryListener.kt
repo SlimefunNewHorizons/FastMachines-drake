@@ -1,6 +1,6 @@
 package net.guizhanss.fastmachines.implementation.listeners
 
-import com.github.drakescraft_labs.slimefun4.api.events.SlimefunItemRegistryFinalizedEvent
+import io.github.thebusybiscuit.slimefun4.api.events.SlimefunItemRegistryFinalizedEvent
 import net.guizhanss.fastmachines.FastMachines
 import net.guizhanss.fastmachines.core.FMRegistry
 import org.bukkit.event.EventHandler
