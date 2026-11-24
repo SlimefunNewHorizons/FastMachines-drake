@@ -43,7 +43,7 @@ dependencies {
     implementation("org.bstats:bstats-bukkit:3.1.0")
 
     testImplementation(kotlin("test"))
-    testImplementation("org.mockbukkit.mockbukkit:mockbukkit-v1.21:4.10.0")
+    testImplementation("org.mockbukkit.mockbukkit:mockbukkit-v26.2:4.116.1")
 }
 
 group = "com.github.drakescraft_labs"
